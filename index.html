@@ -80,16 +80,14 @@
       font-size: 2rem;
       font-weight: 700;
       color: #1db954;
+      text-shadow: 0 0 5px #1db954;
+      animation: glow 1.5s infinite alternate;
     }
 
     .areyou {
       font-size: 1.5rem;
     }
 
-    .mm {
-      text-shadow: 0 0 5px #1db954;
-      animation: glow 1.5s infinite alternate;
-    }
 
     @keyframes glow {
       from {
@@ -203,7 +201,7 @@
 
   <!-- Landing Page -->
   <div class="landing-page">
-    <h1>Hi User... How are you <span class="mm">feeling</span> today?</h1>
+    <h1>Hi User... How are you <span>feeling</span> today?</h1>
     <span class="areyou">Are you feeling <span id="changing-mood" class="changing-text"></span> ?</span>
     <div class="arrow" onclick="document.getElementById('mood-section').scrollIntoView({ behavior: 'smooth' })">⬇</div>
   </div>
