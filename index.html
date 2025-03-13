@@ -6,6 +6,9 @@
   <title>Mood Selector</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root{
+      --main-bg:#E4B1F0;
+    }
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -31,11 +34,11 @@
       position: absolute;
       width: 50px;
       height: 50px;
-      background: #1db954;
+      background: var(--main-bg);
       border-radius: 50%;
       opacity: 0.3;
       animation: float 6s infinite ease-in-out;
-      box-shadow: 0 0 10px #1db954; /* Add this */
+      box-shadow: 0 0 10px var(--main-bg); /* Add this */
     }
 
     .circle:nth-child(1) {
@@ -80,8 +83,8 @@
     .changing-text {
       font-size: 2rem;
       font-weight: 700;
-      color: #1db954;
-      text-shadow: 0 0 5px #1db954;
+      color: var(--main-bg);
+      text-shadow: 0 0 5px var(--main-bg);
       animation: glow 1.5s infinite alternate;
     }
 
@@ -92,10 +95,10 @@
 
     @keyframes glow {
       from {
-        text-shadow: 0 0 10px #1db954;
+        text-shadow: 0 0 10px var(--main-bg);
       }
       to {
-        text-shadow: 0 0 20px #1db954;
+        text-shadow: 0 0 20px var(--main-bg);
       }
     }
 
@@ -148,7 +151,7 @@
     .mood-button {
       padding: 8px 15px;
       border: none;
-      background: #1db954;
+      background: var(--main-bg);
       color: #fff;
       cursor: pointer;
       transition: transform 0.2s, background 0.3s;
@@ -158,12 +161,14 @@
       font-weight: 700;
       border-radius: 50px;
       font-size: 0.9rem;
-      box-shadow: 0 0 10px #1db954; /* Add this */
-      animation: glow 1.5s infinite alternate; /* Add this */
+      box-shadow: 0 0 10px var(--main-bg); 
+      animation: glow 1.5s infinite alternate;
+      /*  */
     }
 
+
     .mood-button:hover {
-      background: #1ed760;
+      background: #C599B6;
       transform: scale(1.05);
     }
 
@@ -193,6 +198,7 @@
       }
     }
   </style>
+  <meta name="theme-color" content="#E4B1F0">
 </head>
 <body>
   <!-- Background Elements -->
